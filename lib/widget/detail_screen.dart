@@ -153,7 +153,10 @@ class _DetailScreenState extends State<DetailScreen> {
                     return Column(
                       children: [
                         for (var episode in snapshot.data!)
-                          Episode(episode: episode, webtoonId: widget.id),
+                          Episode(
+                            episode: episode,
+                            webtoonId: widget.id,
+                          ),
                       ],
                     );
                   }
